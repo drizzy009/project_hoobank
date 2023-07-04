@@ -1,12 +1,22 @@
 import React from 'react';
-
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(registration => {
+        console.log('Service Worker registered: ', registration);
+      })
+      .catch(error => {
+        console.log('Service Worker registration failed: ', error);
+      });
+  });
+}
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
-    <script src='//cdnt.netcoresmartech.com/smartechclient.js'></script>      <script>        smartech('create', 'ADGMOT35CHFLVDHBJNIG50K96AM68RKF7EHOO2OHA1Q08TPD7LL0' );        smartech('register', '303d01c87235c518bbbf52b2d4301eef');        smartech('identify', '');      </script>      
+    <App />     
   </React.StrictMode>
 );
