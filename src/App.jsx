@@ -1,5 +1,6 @@
 import styles from "./style";
 import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
+import ContactPage from "./pages/ContactPage";
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
@@ -23,6 +24,7 @@ const App = () => (
         <CardDeal />
         <Testimonials />
         <Clients />
+        <ContactPage />
         <CTA />
         <Footer />
       </div>
