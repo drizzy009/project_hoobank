@@ -36,6 +36,8 @@
   border-bottom: 1px solid #291E30;
   outline: none;
   background: #DBD4E3 !important;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 .main .formContainer label {
@@ -190,6 +192,10 @@
     h2.frontier_heading {
         text-transform: normal !important;
     }
+
+    .main form {
+      padding: 40px 20px;
+    }
 }
 
 
@@ -204,6 +210,9 @@ input:-webkit-autofill:active {
 .submit_form {
   color: #291E30 !important;
   text-transform: capitalize !important;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
 }
 
 
@@ -226,6 +235,7 @@ input:-webkit-autofill:active {
   border: 1px solid #e8e8e8;
   box-shadow: 6px 6px 12px #c5c5c5,
              -6px -6px 12px #ffffff;
+  
 }
 
 .button2:active {
