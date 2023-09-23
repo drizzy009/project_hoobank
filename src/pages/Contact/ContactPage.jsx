@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import style from "../pages/Contact.module.css";
-import styles from "../style";
+import style from "../../pages/Contact/Contact.module.css";
+import styles from "../../style";
 
 const ContactPage = () => {
   const [firstName, setFirstName] = useState("");
