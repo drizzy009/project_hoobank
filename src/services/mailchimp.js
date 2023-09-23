@@ -1,8 +1,9 @@
 import mailchimp from "@mailchimp/mailchimp_marketing";
 
 mailchimp.setConfig({
-  apiKey: "c5727135e9dda8486cbabaf3548c29c1-us10",
+  apiKey: "c5727135e9dda8486cbabaf3548c29c1",
   server: "us10",
+  listid: "904113"
 });
 
 /**
@@ -19,4 +20,8 @@ async function run() {
 
 run();
 
-export default mailchimp
+const MailChimp = {
+  mailchimp
+};
+
+export default MailChimp;
