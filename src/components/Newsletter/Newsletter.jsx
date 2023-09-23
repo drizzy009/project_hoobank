@@ -18,7 +18,7 @@ function Newsletter() {
     e.preventDefault();
 
     const url =
-      "https://github.us10.list-manage.com/subscribe/post?u=5bd792afcd72202ed60397377&id=bb3b323d69&f_id=0032c7e5f0";
+      `https://github.us10.list-manage.com/subscribe/post?u=${import.meta.env.VITE_MAILCHIMP_U}&id=${import.meta.env.VITE_MAILCHIMP_ID}`;
 
     jsonp(
       `${url}&EMAIL=${encodeURIComponent(email)}&FNAME=${encodeURIComponent(
