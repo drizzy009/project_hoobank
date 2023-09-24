@@ -7,7 +7,7 @@ const CustomRoute = () => {
   return (
     <>
       <Routes>
-        <Route path="/subscribe" exact element={<Newsletter />} />
+        <Route path="/newsletter" exact element={<Newsletter />} />
         <Route path="/" exact element={< HomePage/>} />
         <Route path="/contact" exact element={< ContactPage/>} />
       </Routes>
